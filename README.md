@@ -1,70 +1,77 @@
-# Edmonton 社区观察
+# Edmonton 社区观察 / Edmonton Community Atlas
 
-以官方社区边界展示 Edmonton 的家庭收入与华人人口。收入用蓝—黄—红底色表示，华人人口用面积成比例的圆点表示，支持人数／占比切换、社区搜索、桌面悬停、手机点击详情与社区链接分享。
+基于官方社区边界与 2021 年人口普查资料，查看 Edmonton 社区的人口构成、不同人口群体的分布和家庭收入。
 
-- 源码：<https://github.com/curtisatiwatt/edmonton-census>
-- GitHub Pages：<https://curtisatiwatt.github.io/edmonton-census/>
+- **社区构成**：圆环呈现已选人口类别的占比，灰色为其余类别；可叠加蓝—黄—红收入底图。社区详情对照全市占比。
+- **分布对比**：多个同步地图采用相同占比色阶；手机按类别切换。此视图保持轻量，不叠加线路和地标。
+- 普通复选框选择人口群体，支持全部 13 个原始普查类别。默认五类由 Edmonton 官方全市人数排序，包含华人。
+- 社区构成可切换道路与铁路、社区标注、LRT 和地理地标。名称随缩放逐步显示并避让，桌面 hover 保留选区参考，手机点击查看详情。
+- **EN / 中文**切换涵盖控件、统计解释、参考说明、图例及站点状态；社区和车站的正式名称保留原样。
+- **白天 / 夜间**使用太阳、月亮按钮。首次跟随系统明暗设置，手动选择和语言设置保存在浏览器；夜间模式保留统计色阶的含义。
+
+源码：<https://github.com/curtisatiwatt/edmonton-census>
+在线地图：<https://curtisatiwatt.github.io/edmonton-census/>
 
 ## 开发与预览
 
-使用 **Node.js 24 + Vite + Leaflet**，无需 Python、API key、数据库或外部地图瓦片服务。
+使用 **Node.js 24 + Vite + Leaflet**，日常开发无需 Python、API key、数据库或外部地图瓦片服务。
 
 ```sh
 npm ci
 npm run dev
 ```
 
-打开终端显示的 Vite 本地地址。修改前端后会自动刷新。
-
 ```sh
-npm run check     # 数据校验与单元测试
+npm run check     # 单元测试与人口、原始数据、地理数据检查
 npm run build     # 打包至 dist/
-npm run preview   # 本地查看生产构建
+npm run preview   # 查看生产构建
 ```
 
-不要直接双击 `index.html`：浏览器需要通过 Vite 或其他 HTTP 服务读取 GeoJSON。网站资源使用相对路径，可运行在根目录或 GitHub Pages 的 `/edmonton-census/` 子目录。
-
-## GitHub Pages
-
-工作流 `.github/workflows/pages.yml` 在 `main` 更新后执行 `npm ci`、校验、Vite 打包与 Pages 发布。首次使用需在仓库 **Settings → Pages → Source** 选择 **GitHub Actions**。
-
-只发布 `dist/` 中的构建结果；依赖锁定在 `package-lock.json`。访问者无需登录 GitHub 或 ChatGPT。
+资源使用相对路径，可部署在根目录或 GitHub Pages 的 `/edmonton-census/` 子目录。`main` 更新后，`.github/workflows/pages.yml` 自动校验、构建并发布 `dist/`。首次部署需将 Pages 的 Source 设为 GitHub Actions。
 
 ## 项目结构
 
 | 文件 | 用途 |
 | --- | --- |
-| `index.html` | 页面、控件及数据说明对话框 |
-| `src/main.js` | 地图、搜索、图层与响应式交互 |
-| `src/map-utils.js` | 收入分档、圆面积换算、搜索等纯函数 |
-| `src/data.js` | 加载本地数据、标准化社区代码与计算排名 |
-| `src/styles.css` | 桌面与手机样式 |
-| `public/data/communities.geojson` | 官方社区边界、统计与选区参考 |
-| `public/data/basemap.geojson` | 道路与水域参考几何 |
-| `public/data/metadata.json` | 数据年份、全市基准、定义与来源 |
-| `scripts/validate-data.mjs` | 数据覆盖、字段、来源和几何检查 |
-| `tests/map-utils.test.js` | 缺失值、配色边界、面积比例与搜索测试 |
-| `vite.config.js` | Vite 开发与生产打包配置 |
-| `data/source/` | 已核对的官方统计快照与简化边界，用于重建应用数据 |
-| `data/audit/` | 官方字段、查询、覆盖率、连接方法及几何校验记录 |
-| `scripts/prepare-data.mjs` | 从快照按社区编号连接统计，生成参考说明和发布数据 |
+| `index.html` | 两种视图、控件与数据说明对话框 |
+| `src/main.js` | 地图、搜索、分类选择、详情与手机交互 |
+| `src/context-layers.js` | 仅用于社区构成的交通、地理背景及渐进标注 |
+| `src/i18n.js` / `src/city-content.js` | 通用界面翻译和 Edmonton 数据解释 |
+| `src/theme.js` / `src/styles.css` | 系统主题、手动切换及响应式视觉样式 |
+| `src/data.js` | 数据加载、代码规范化和并列收入排名 |
+| `src/population-utils.js` | 同口径占比、圆环取整差额及固定分布色阶 |
+| `src/map-tooltip.js` | 每张地图共用一个悬停卡片，拖动与缩放时清理 |
+| `public/data/communities.geojson` | 原有 403 个社区边界、收入及统计快照，保留原值 |
+| `public/data/population-groups.json` | 13 类人口人数、同表分母与全市基准 |
+| `public/data/basemap.geojson` | 道路与水域几何 |
+| `public/data/lrt-operating.geojson` / `lrt-planned.geojson` | 运营 LRT 与未运营扩建线路及站点 |
+| `public/data/geographic-context.geojson` | 公园、机场、铁路与保留区背景 |
+| `public/data/metadata.json` | 年份、统计口径、来源与许可 |
+| `data/source/` / `data/audit/` | 官方快照、连接与数据准备审计 |
+| `scripts/` | 数据准备及完整性检查 |
 
-如需从仓库中的已核对快照重建数据，运行 `npm run prepare:data`。这一步也仅使用 Node.js；日常开发无需执行。`data/audit/statistics.json` 保存官方 API 查询及字段编号，便于更新下一期数据时核查口径。
+原有收入与华人数据可通过 `npm run prepare:data` 从仓库快照重建。人口分类与地理资料的准备脚本、官方来源及许可见对应审计；它们是数据维护步骤，不是浏览网站的运行时依赖。
 
-## 数据口径与使用限制
+## 数据口径
 
-网站的数据说明对话框与 `metadata.json` 记录此版本使用的具体年份、来源及统计分母。收入参考年和人口普查年份分别标示，不将新一轮普查完成收集误写成新收入或族裔数据已公布。
+- 收入为 **2020 年私人住户税前总年收入中位数**，CAD，来自 2021 年普查 25% 长表社区定制汇总。不是个人工资、经济家庭收入、税后收入、房价或当前财富。
+- 人口类别采用普查原始 visible minority / racialized population 分类。Chinese 不等于中国国籍、中国出生、中文使用者或所有具华人祖源者；“非可见少数族裔”不能改称白人或欧洲裔。
+- **人口构成占比 = 类别人数 ÷ 同一 25% 长表的私人住户人口**。详情优先显示这一人口基数；没有分类记录时，回退到原有 100% 短表私人住户人口并标明口径。两种人口基数可能不同，不能混用。
+- 0–14 岁占比和平均私人住户人数来自 100% 短表。儿童比例的分母是包含集体住所居民的年龄统计总人口。
+- 分类人数受随机取整影响。少于同表人口时，圆环单独留白表示原表统计差额；超过人口时，仅圆环按分类合计缩放。详情与热度图保留原始人数和同表分母。“其余类别”只包含未勾选类别，不吸收统计差额或缺失数据。
+- 缺失为 `null`，公布的 0 保留为 0。原有 **16 个华人人数为 0 的社区**保持不变；没有数据不等于没有居民或低收入。
+- 2021 边界名称与定制统计范围存在时间和合并口径差异。市府统计按 2023 年社区边界整理，部分小型河谷、工业区域人口并入邻近社区，且没有完整逐区对应表。仅按官方社区编号连接公布值，不向周边缺失社区复制统计。
+- 收入排名只使用有可用收入的社区，相同收入并列。参考说明是辅助比较，不是学校排名或治安评分。
+- 统计仅覆盖 Edmonton 市内，不包含 St. Albert、Sherwood Park 等市外地区。地理背景可延伸至市外，但不会扩展普查统计或默认全市视图。
 
-- 收入为 2020 年税前私人住户总年收入中位数，单位 CAD，来自 2021 年普查 25% 长表社区定制汇总，不是个人工资、经济家庭收入、税后收入、房价或净资产。
-- Chinese 是普查 visible minority 分类中的 Chinese 人数，来自 25% 长表加权估计，不等于中国国籍、中国出生、中文使用者或所有具华人祖源者。占比用同一长表的私人住户人口作分母，从公布的随机取整人数计算；详情中显示该分母，不能用其他总人口替代。
-- 详情中的“私人住户人口”来自 100% 短表，不含集体住所居民；与 25% 长表加权人口可能不同。0–14 岁占比使用市府短表直接发布值，分母为包含集体住所居民的年龄统计总人口。平均私人住户人数亦采用 100% 短表直接发布值。
-- 缺失值为 `null`；公布的 0 保留统计取整提示。缺少圆点可能是 0，也可能是没有数据。
-- 市府提供的 2021 边界名称与定制统计整理范围存在时间和合并口径差异：部分小型河谷、工业区域人口并入邻近社区，且没有完整逐区对应表。本图按官方社区编号连接公布值，不向周边缺失社区复制统计；具体方法与限制见数据说明。
-- 圆的**面积**与人数或占比成正比，圆心为社区内的显示位置，不是居民住址。手机端统一缩小圆点与图例。
-- 每个社区的收入排名由有可用收入的社区计算；相同收入并列排名。参考说明是分析判断，不是官方学校排名或治安评分。
-- 地图覆盖 Edmonton 市界内社区，不包含 St. Albert、Sherwood Park 等市外地区。
-- 社区链接可在网址后加 `#社区代码`；搜索亦支持数据中列出的历史名称别名。
+## 地图与主题
+
+两种视图始终共用固定的人口占比色阶；切换语言或主题不会改变数据、分母、类别选择、当前社区或地图位置。全市视角减少重叠文字和站点，放大逐步展开详情。运营线路为实线，未运营扩建为虚线；具体建设或规划状态在站点详情显示。
+
+地理资料是独立的资料快照，不代表实时交通服务。公园底色不是完整植被覆盖率；机场的点状位置和区域边界按来源分别标识。保留区边界只提供地理背景。正式建设计划、开放时间、学校分配和具体地址的通勤需查官方来源。
 
 ## 来源与许可
 
-原始来源链接、整理日期与官方许可说明见 `public/data/metadata.json`。数据不是实时更新服务。Leaflet 采用 BSD-2-Clause 许可，许可证随发布文件保留在 `public/licenses/leaflet.txt`；Vite 采用 MIT 许可，详见对应依赖的 LICENSE 文件。第三方许可不改变项目自有代码的权利归属。
+原始数据来源、整理日期与官方许可见 `public/data/metadata.json` 及 `data/audit/`。统计资料改编自 Statistics Canada 2021 Census，经 City of Edmonton 发布，不代表 Statistics Canada 的认可。
+
+Leaflet 使用 BSD-2-Clause，许可证保留在 `public/licenses/leaflet.txt`；Vite 使用 MIT。第三方许可不改变项目自有代码的权利归属。

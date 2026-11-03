@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Capital Line: Northeast</name>
+    <description>Preliminary engineering for an LRT extension north of Clareview station was completed in 2010. The City will move forward to design and construction once funding becomes available.</description>
+    <Style id="icon-1499-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1499-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1499-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-673AB7-5000-normal">
+      <LineStyle>
+        <color>ffb73a67</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-673AB7-5000-highlight">
+      <LineStyle>
+        <color>ffb73a67</color>
+        <width>7.5</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-673AB7-5000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-673AB7-5000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-673AB7-5000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Capital Line: Northeast</name>
+      <Placemark>
+        <name>Gorman Station </name>
+        <description>This is a visual indicator of where the station is planned at this point in the project. The exact location has yet to be determined.</description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.377898,53.618478,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Capital Line: Northeast</name>
+        <description><![CDATA[Clareview to Gorman<br>Preliminary engineering for an LRT extension north of Clareview station was completed in 2010. The City will move forward to design and construction once funding becomes available.<br><br>Project Page:<br> https://www.edmonton.ca/nlrtstudy]]></description>
+        <styleUrl>#line-673AB7-5000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.410985,53.602196,0
+            -113.38664,53.61689,0
+            -113.3738962,53.6192364,0
+            -113.3720521,53.6197686,0
+            -113.3705512,53.6205555,0
+            -113.3695978,53.6222655,0
+            -113.3695144,53.62527,0
+            -113.3695144,53.6271264,0
+            -113.3695165,53.6285986,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Valley Line: West </name>
+    <description/>
+    <Style id="icon-1499-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1499-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1499-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1528-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1528-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1528-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1528-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1528-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1532-01579B-normal">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1532-01579B-highlight">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1532-01579B">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1532-01579B-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1532-01579B-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1592-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1592-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1592-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1592-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1592-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1608-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1608-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1608-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1608-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1608-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1644-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1644-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1644-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1644-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1644-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-7C3592-6000-normal">
+      <LineStyle>
+        <color>ff92357c</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-7C3592-6000-highlight">
+      <LineStyle>
+        <color>ff92357c</color>
+        <width>9</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-7C3592-6000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-7C3592-6000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-7C3592-6000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-7C3592-7000-normal">
+      <LineStyle>
+        <color>ff92357c</color>
+        <width>7</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-7C3592-7000-highlight">
+      <LineStyle>
+        <color>ff92357c</color>
+        <width>10.5</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-7C3592-7000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-7C3592-7000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-7C3592-7000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-7C3592-8000-normal">
+      <LineStyle>
+        <color>ff92357c</color>
+        <width>8</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-7C3592-8000-highlight">
+      <LineStyle>
+        <color>ff92357c</color>
+        <width>12</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-7C3592-8000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-7C3592-8000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-7C3592-8000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-D698AD-6000-normal">
+      <LineStyle>
+        <color>ffad98d6</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-D698AD-6000-highlight">
+      <LineStyle>
+        <color>ffad98d6</color>
+        <width>9</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-D698AD-6000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-D698AD-6000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-D698AD-6000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-D698AD-7000-normal">
+      <LineStyle>
+        <color>ffad98d6</color>
+        <width>7</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-D698AD-7000-highlight">
+      <LineStyle>
+        <color>ffad98d6</color>
+        <width>10.5</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-D698AD-7000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-D698AD-7000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-D698AD-7000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Public Engagement</name>
+    </Folder>
+    <Folder>
+      <name>Proposed Changes to Valley Line West’s Concept Plan</name>
+      <Placemark>
+        <name>Lewis Farms LRT terminus site</name>
+        <description><![CDATA[Adjusting the location of LRT Stop and LRV storage facility and increasing the size of Park and Ride facility.<br><br>https://www.edmonton.ca/documents/PDF/LewisFarmsValleyLineWest.pdf]]></description>
+        <styleUrl>#icon-1608-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -113.6641002,53.5231278,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>87 Avenue and 178 Street</name>
+        <description><![CDATA[Adding an elevated LRT guideway over 178 Street along the south side of 87 Avenue.<br><br>https://www.edmonton.ca/documents/PDF/ValleyLineWest178StreetUpdate.pdf]]></description>
+        <styleUrl>#icon-1608-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -113.6303902,53.5212781,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jasper Place Transit Centre</name>
+        <description>Maintaining the existing location.</description>
+        <styleUrl>#icon-1608-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -113.5919219,53.5407409,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>156 Street and Stony Plain Road</name>
+        <description><![CDATA[Realigning the LRT track and relocating the 156 Street LRT Stop between Stony Plain Road/155 Street and 99 Avenue/156 Street intersections.<br><br>https://www.edmonton.ca/documents/PDF/ValleyLineWest156StreetUpdate.pdf]]></description>
+        <styleUrl>#icon-1608-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -113.5903502,53.5413275,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stony Plain Road and 149 Street </name>
+        <description><![CDATA[Adding an urban interchange separating centre-running at-grade LRT on Stony Plain Road from 149 Street north-south traffic.<br><br>https://www.edmonton.ca/documents/PDF/ValleyLineWest149StreetUpdate.pdf]]></description>
+        <styleUrl>#icon-1608-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -113.5780334,53.5417355,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>124 Street Stop</name>
+        <description><![CDATA[Relocating the stop one block east, centred on 123 Street.<br><br>https://www.edmonton.ca/documents/PDF/ValleyLineWest124StreetUpdate.pdf]]></description>
+        <styleUrl>#icon-1608-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -113.535955,53.5472691,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LRT sidetrack</name>
+        <description><![CDATA[Relocating the LRT sidetrack to the median of 104 Avenue, between 109 and 111 Street.<br><br>https://www.edmonton.ca/documents/PDF/ValleyLineWest104AvenueUpdate.pdf]]></description>
+        <styleUrl>#icon-1608-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -113.5103023,53.5462874,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Valley Line: West</name>
+      <Placemark>
+        <name>NorQuest Stop</name>
+        <description><![CDATA[Area 5a Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_120St_to_102St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.504898,53.5453,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MacEwan Arts/112 Street Stop</name>
+        <description><![CDATA[Area 5a Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_120St_to_102St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.513954,53.546207,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wîhkwêntôwin ᐄᐧᐦᑫᐧᐣᑑᐃᐧᐣ/116 Street Stop</name>
+        <description><![CDATA[Area 5a Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_120St_to_102St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.521385,53.546429,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brewery/120 Street Stop</name>
+        <description><![CDATA[Area 5a Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_120St_to_102St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.528534,53.546326,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>124 Street Stop</name>
+        <description><![CDATA[Area 5a Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_139St_to_119St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.535927,53.54697,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Stony Plain Rd & Groat Rd Bridge]]></name>
+        <description><![CDATA[Bridge:<br>https://www.edmonton.ca/documents/PDF/GroatRoadBridge.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1528-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -113.545776,53.547806,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Glenora Stop</name>
+        <description><![CDATA[Area 5b Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_139St_to_119St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.551308,53.546211,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grovenor/142 Street Stop</name>
+        <description><![CDATA[Area 5b Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_100Ave_to_137_St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.564575,53.543125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stony Plain Road/149 Street Stop</name>
+        <description><![CDATA[Area 5b Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_100Ave_to_137_St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.580696,53.541328,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jasper Place Stop</name>
+        <description><![CDATA[Area 5b Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_100Ave_to_137_St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.5905493,53.5405089,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Glenwood/Sherwood Stop</name>
+        <description><![CDATA[Area 6a Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_161St_to_99Ave.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.590347,53.531578,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Meadowlark Stop</name>
+        <description><![CDATA[Area 6a Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_161St_to_99Ave.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.5952,53.521942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Misericordia Station</name>
+        <description><![CDATA[Area 6a Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_178St_to_161St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.61216,53.519684,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bridge Over 170 Street</name>
+        <description><![CDATA[Bridge:<br>https://www.edmonton.ca/documents/PDF/ValleyLineWest170Bridge.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1528-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -113.615112,53.519592,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>West Edmonton Mall Station</name>
+        <description><![CDATA[Area 6b Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_178St_to_161St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.622894,53.520256,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>West Edmonton Mall Transit Centre</name>
+        <description><![CDATA[Transit Centre:<br>https://www.edmonton.ca/documents/PDF/ParknRideKissnRideTransitCentre.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1532-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            -113.622612,53.5205,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Aldergrove/Belmead Stop</name>
+        <description><![CDATA[Area 6b Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_Lewis_Farms_to_182St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.639442,53.521355,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lewis Farms Stop</name>
+        <description><![CDATA[Area 6c Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_Lewis_Farms_to_182St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.66375,53.522842,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Lewis Farms Kiss 'n' Ride]]></name>
+        <description><![CDATA[Kiss 'n' Rides are part of ongoing design, and should not be considered finalized. <br><br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1592-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -113.663597,53.522125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lewis Farms Transit Centre</name>
+        <description><![CDATA[Transit Centre - https://goo.gl/L1oPYO<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1532-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            -113.6633,53.522388,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Lewis Farms Park 'n' Ride]]></name>
+        <description><![CDATA[Park 'n' Ride - https://goo.gl/L1oPYO<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1644-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -113.663857,53.522362,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bridge over Anthony Henday Drive</name>
+        <description><![CDATA[Bridge:<br>https://www.edmonton.ca/documents/PDF/AnthonyHendayDriveBridge.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1528-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -113.659218,53.522541,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alex Decoteau Stop</name>
+        <description><![CDATA[Area 5a Detailed Map:<br>https://www.edmonton.ca/documents/PDF/Roll_Plans_120St_to_102St.pdf<br><br>Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.50209,53.543072,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Valley Line: West LRT Line</name>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-8000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.502098,53.54311,0
+            -113.50444,53.54311,0
+            -113.50489,53.543282,0
+            -113.50489,53.545311,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.50489,53.545319,0
+            -113.50489,53.545959,0
+            -113.505188,53.546249,0
+            -113.514474,53.546204,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.514313,53.546207,0
+            -113.521378,53.546249,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.521408,53.546246,0
+            -113.524193,53.546227,0
+            -113.525948,53.546261,0
+            -113.528542,53.546307,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.528564,53.546295,0
+            -113.530373,53.546242,0
+            -113.531479,53.546368,0
+            -113.534134,53.546684,0
+            -113.535919,53.546951,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.53595,53.54697,0
+            -113.536324,53.546959,0
+            -113.544312,53.54797,0
+            -113.544991,53.548012,0
+            -113.546478,53.547741,0
+            -113.547279,53.547489,0
+            -113.54969,53.546776,0
+            -113.550323,53.546547,0
+            -113.551315,53.546234,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.551308,53.546227,0
+            -113.554482,53.5452,0
+            -113.555077,53.545029,0
+            -113.560158,53.543922,0
+            -113.563721,53.543171,0
+            -113.56459,53.543152,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.56459,53.543159,0
+            -113.566681,53.543011,0
+            -113.568542,53.542759,0
+            -113.570518,53.542164,0
+            -113.571106,53.542065,0
+            -113.571671,53.542015,0
+            -113.57225,53.542004,0
+            -113.572868,53.542042,0
+            -113.574089,53.542137,0
+            -113.575104,53.542168,0
+            -113.576065,53.542137,0
+            -113.577026,53.542019,0
+            -113.577873,53.541801,0
+            -113.578636,53.541584,0
+            -113.579842,53.541359,0
+            -113.580902,53.541321,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.580894,53.541328,0
+            -113.581741,53.541302,0
+            -113.587708,53.541302,0
+            -113.5886417,53.541284,0
+            -113.5903498,53.5412984,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.5903498,53.5412984,0
+            -113.5903001,53.5402785,0
+            -113.590317,53.539719,0
+            -113.590363,53.531563,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.590363,53.531544,0
+            -113.590332,53.525009,0
+            -113.590332,53.524742,0
+            -113.590385,53.524544,0
+            -113.59053,53.524368,0
+            -113.590675,53.524216,0
+            -113.591896,53.523502,0
+            -113.59362,53.522572,0
+            -113.595024,53.521767,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.595024,53.521748,0
+            -113.595695,53.521343,0
+            -113.595932,53.521156,0
+            -113.596397,53.520618,0
+            -113.596535,53.52,0
+            -113.596519,53.519764,0
+            -113.596581,53.519669,0
+            -113.596817,53.519531,0
+            -113.59729,53.519531,0
+            -113.608574,53.519527,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-D698AD-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.608597,53.519531,0
+            -113.610809,53.519634,0
+            -113.61216,53.51968,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-D698AD-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.61216,53.519669,0
+            -113.617371,53.519714,0
+            -113.619232,53.519794,0
+            -113.620834,53.519966,0
+            -113.622818,53.520248,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.638847,53.521431,0
+            -113.644775,53.521355,0
+            -113.64959,53.521206,0
+            -113.65255,53.521133,0
+            -113.655045,53.521519,0
+            -113.657898,53.522369,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-7C3592-6000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.663696,53.522839,0
+            -113.662415,53.522919,0
+            -113.657921,53.522362,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-D698AD-7000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.628807,53.520924,0
+            -113.631653,53.521248,0
+            -113.635361,53.5214,0
+            -113.637749,53.521423,0
+            -113.638824,53.521431,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Valley Line: West</name>
+        <description><![CDATA[Project Page:<br>http://edmonton.ca/Valleyline]]></description>
+        <styleUrl>#line-D698AD-6000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.622856,53.520252,0
+            -113.624176,53.520451,0
+            -113.625175,53.520527,0
+            -113.626625,53.520653,0
+            -113.628738,53.520927,0
+            -113.628761,53.520927,0
+            -113.628769,53.520927,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Untitled layer</name>
+    </Folder>
+  </Document>
+</kml>

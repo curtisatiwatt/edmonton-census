@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Metro Line: Northwest </name>
+    <description/>
+    <Style id="icon-1499-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1499-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1499-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1499-424242-normal">
+      <IconStyle>
+        <color>ff424242</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1499-424242-highlight">
+      <IconStyle>
+        <color>ff424242</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1499-424242">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-424242-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-424242-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1528-FF5252-nodesc-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1528-FF5252-nodesc-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1528-FF5252-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1528-FF5252-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1528-FF5252-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1532-01579B-nodesc-normal">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1532-01579B-nodesc-highlight">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1532-01579B-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1532-01579B-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1532-01579B-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1644-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1644-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1644-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1644-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1644-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1662-424242-nodesc-normal">
+      <IconStyle>
+        <color>ff424242</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1662-424242-nodesc-highlight">
+      <IconStyle>
+        <color>ff424242</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1662-424242-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1662-424242-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1662-424242-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1724-4E342E-nodesc-normal">
+      <IconStyle>
+        <color>ff2e344e</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1724-4E342E-nodesc-highlight">
+      <IconStyle>
+        <color>ff2e344e</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1724-4E342E-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1724-4E342E-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1724-4E342E-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0288D1-4000-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-0288D1-4000-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-0288D1-4000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0288D1-4000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0288D1-4000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-9C27B0-4000-normal">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-9C27B0-4000-highlight">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-9C27B0-4000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-9C27B0-4000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-9C27B0-4000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-9C27B0-4875-normal">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>4.875</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-9C27B0-4875-highlight">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>7.3125</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-9C27B0-4875">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-9C27B0-4875-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-9C27B0-4875-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-CE93D8-5000-normal">
+      <LineStyle>
+        <color>ffd893ce</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-CE93D8-5000-highlight">
+      <LineStyle>
+        <color>ffd893ce</color>
+        <width>7.5</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-CE93D8-5000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-CE93D8-5000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-CE93D8-5000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Public Engagement</name>
+    </Folder>
+    <Folder>
+      <name>Metro Line LRT</name>
+      <Placemark>
+        <name>Phase 1 - NAIT/Blatchford Market to Blatchford Gate </name>
+        <description><![CDATA[After leaving NAIT/Blatchford Market Station, the train will travel to Blatchford Gate Station. Service will occur once ridership demand requires it.<br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-0288D1-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.508602,53.566446,0
+            -113.512416,53.571664,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Complete - Blatchford Gate Station</name>
+        <description><![CDATA[Blatchford Gate Station is complete, but not operational until transit service standards met.<br><br>What We Heard:<br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4875</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.512974,53.581067,0
+            -113.5128023,53.5779331,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 2 - Blatchford to Castle Downs</name>
+        <description><![CDATA[There will be an elevated bridge crossing Yellowhead Trail and the CN Walker Yard. A bridge with a shared-use path provides a safe crossing for pedestrians and cyclists. <br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-CE93D8-5000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.512974,53.581067,0
+            -113.516482,53.585047,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 2 - Blatchford to Castle Downs</name>
+        <description><![CDATA[The LRT will continue northwest towards 113A Street.Travelling at-grade through the 129 Avenue intersection and continuing north along the center of 113a Street. <br><br>The LRT will continue north, with an intersection at 130 Avenue. The LRT runs parallel with a proposed shared-use path for pedestrians and cyclists that will provide a connection from the Lauderdale off-leash area north to Castle Downs Park. <br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.516482,53.585047,0
+            -113.516428,53.592151,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 2 - Blatchford to Castle Downs</name>
+        <description><![CDATA[The LRT continues north past Rosslyn Park. Streetside parking is provided in the southbound direction from 134 Avenue to 135 Avenue<br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.516428,53.592151,0
+            -113.516534,53.594917,0
+            -113.516643,53.594979,0
+            -113.516674,53.594999,0
+            -113.516656,53.599596,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 2 - Blatchford to Castle Downs</name>
+        <description><![CDATA[The 137 Avenue Station will be a trenched station where the LRT travels just below ground through an underpass. A trenched station will help mitigate east-west traffic impacts on 137 Avenue and allow pedestrians to access the station without having to cross the intersection. <br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.516656,53.599596,0
+            -113.516675,53.600515,0
+            -113.516536,53.600712,0
+            -113.516579,53.602011,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 2 - Blatchford to Castle Downs</name>
+        <description><![CDATA[The LRT will continue north along the center of Castle Downs Road.<br><br>The LRT will travel below ground through an underpass at 139 Avenue and Castle Downs Road.<br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.516579,53.602011,0
+            -113.516729,53.602106,0
+            -113.516729,53.607059,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 2 - Blatchford to Castle Downs</name>
+        <description><![CDATA[The LRT will continue north along the center of Castle Downs Road past the Caernarvon and Griesbach neighbourhoods, with an intersection located at 152 Avenue/McCrae Avenue.<br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.516729,53.607056,0
+            -113.516707,53.613972,0
+            -113.516906,53.614239,0
+            -113.517483,53.614309,0
+            -113.518987,53.614296,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 3 - Castle Downs to Campbell Road</name>
+        <description><![CDATA[The LRT will continue west until it reaches the at-grade 137 Street Station. This station will service the neighbourhoods of Oxford and Carlton to the north, and Cumberland to the south.<br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.519009,53.614322,0
+            -113.5208,53.614354,0
+            -113.52138,53.614296,0
+            -113.523322,53.614669,0
+            -113.524979,53.615235,0
+            -113.526846,53.616101,0
+            -113.528016,53.616508,0
+            -113.528922,53.616724,0
+            -113.529797,53.616861,0
+            -113.531127,53.61698,0
+            -113.539216,53.616982,0
+            -113.54019,53.616979,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 3 - Castle Downs to Campbell Road</name>
+        <description><![CDATA[The LRT will continue west until it reaches the at-grade 137 Street Station. This station will service the neighbourhoods of Oxford and Carlton to the north, and Cumberland to the south.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.54019,53.616979,0
+            -113.543098,53.616949,0
+            -113.544152,53.61688,0
+            -113.54531,53.616594,0
+            -113.546812,53.615948,0
+            -113.548406,53.615308,0
+            -113.548905,53.615104,0
+            -113.549634,53.614894,0
+            -113.550047,53.614777,0
+            -113.550353,53.614726,0
+            -113.550922,53.614684,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 3 - Castle Downs to Campbell Road</name>
+        <description><![CDATA[The LRT will continue west until it reaches the at-grade137 Street Station. This station will service the neighbourhoods of Oxford and Carlton to the north, and Cumberland to the south. <br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.550922,53.614684,0
+            -113.551203,53.61468,0
+            -113.55134,53.614645,0
+            -113.55355,53.614621,0
+            -113.555007,53.614626,0
+            -113.556855,53.614622,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 3 - Castle Downs to Campbell Road</name>
+        <description><![CDATA[The LRT will continue west with an underpass below the existing CN rail tracks and return to street level at the 142 Street intersection, continuing west along the south side of 153 Avenue towards the Campbell Road Station.<br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.556822,53.614621,0
+            -113.560953,53.614589,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 3 - Castle Downs to Campbell Road</name>
+        <description><![CDATA[The LRT will continue west with an underpass below the existing CN rail tracks and return to street level at the 142 Street intersection, continuing west along the south side of 153 Avenue towards the Campbell Road Station.<br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.569579,53.614532,0
+            -113.594309,53.615104,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 3 - Castle Downs to Campbell Road</name>
+        <description><![CDATA[The LRT will continue west with an underpass below the existing CN rail tracks and return to street level at the 142 Street intersection, continuing west along the south side of 153 Avenue towards the Campbell Road Station.<br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard: <br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf]]></description>
+        <styleUrl>#line-9C27B0-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.560953,53.614589,0
+            -113.569579,53.614532,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Phase 1 - NAIT/Blatchford Market to Blatchford Gate </name>
+        <description><![CDATA[After leaving NAIT/Blatchford Market Station, the train will travel to Blatchford Gate Station. <br><br>Edmontonians in communities Northwest of City Centre share their vision of the Metro Line Northwest LRT Extension.<br><br>What We Heard:<br>https://www.edmonton.ca/documents/RoadsTraffic/MetroLineNWWhatWeHeardReportFall2017.pdf ]]></description>
+        <styleUrl>#line-0288D1-4000</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -113.512416,53.571664,0
+            -113.5127379,53.5773529,0
+            -113.5128023,53.5779331,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Metro Line: Northwest - LRT Stations</name>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name>Complete - Blatchford Gate Station</name>
+        <description>Blatchford Gate Station is complete, but not operational until transit service standards met.</description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.51241,53.5773826,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name>NAIT/ Blatchford Market Station</name>
+        <description>The NAIT/Blatchford Market station will accommodate up to 5-car trains on Metro Line, as ridership demand warrants, providing additional transit capacity to better serve students and residents travelling to and from the area.</description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.508602,53.566446,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name>Design Phase - 132 Avenue Station</name>
+        <description>The LRT continues north along 113A Street until it reaches 132 Avenue Station. The station is a split-platform configuration where the platforms are located on opposite sides of the intersection. This station will service Rosslyn School, the Canadian Islamic Centre as well as the adjacent mature neighbourhoods</description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.516426,53.591916,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name>Design Phase - 137 Avenue Station </name>
+        <description>The 137 Avenue Station will be a trenched station where the LRT travels just below ground through an underpass. A trenched station will help mitigate east-west traffic impacts on 137 Avenue and allow pedestrians to access the station without having to cross the intersection.</description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.516546,53.60132,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name>Design Phase - 145 Avenue Station </name>
+        <description>The station is a split-platform configuration where the platforms are located on opposite sides of the intersection. This station will service the Griesbach development, as well as the mature neighbourhoods of Carlisle and Caernarvon to the west.</description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.516729,53.607056,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name>Design Phase - Castle Downs Station</name>
+        <description>The LRT will continue north along Castle Downs Road and then turn west at 153 Avenue into Castle Downs Station. The station will be integrated with the transit center, and will provide service to the nearby YMCA, schools, district park, and mature neighbourhoods.</description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.519009,53.614322,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name>Design Phase - 127 Street Station</name>
+        <description>The 127 Street Station will be a trenched station where the LRT travels just below ground through an underpass. A trenched station will help mitigate traffic impacts at this intersection.</description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.54019,53.616979,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name>Design Phase - 137 Street Station</name>
+        <description>The LRT will continue west until it reaches 137 Street Station. This station will service the neighbourhoods of Oxford and Carlton to the north, and Cumberland to the south.</description>
+        <styleUrl>#icon-1499-000000</styleUrl>
+        <Point>
+          <coordinates>
+            -113.556822,53.614621,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name>Design Phase - Campbell Road Station</name>
+        <description><![CDATA[The Metro Line Northwest LRT will end at the Nakî Transit Centre and Park & Ride, run by the City of St.Albert. It is located at Campbell Road and 153 Avenue. The LRT stop will be integrated with the Park & Ride facility to allow transfers between Edmonton and St. Albert.]]></description>
+        <styleUrl>#icon-1499-424242</styleUrl>
+        <Point>
+          <coordinates>
+            -113.594385,53.615123,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+      <Placemark>
+        <name/>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Metro Line: Northwest - Transit Centres</name>
+      <Placemark>
+        <name>137 Ave Transit Centre</name>
+        <styleUrl>#icon-1532-01579B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -113.515189,53.601397,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Castle Downs Transit Centre</name>
+        <styleUrl>#icon-1532-01579B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -113.519615,53.614818,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canpbell Road Transit Centre</name>
+        <styleUrl>#icon-1532-01579B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -113.593944,53.616078,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Metro Line: Northwest - Park and Ride</name>
+      <Placemark>
+        <name>Campbell Road Park and Ride</name>
+        <styleUrl>#icon-1644-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -113.595511,53.615913,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Metro Line: Northwest - Overpass</name>
+      <Placemark>
+        <name>Bridge over Yellowhead Trail and CN Walker Yard</name>
+        <styleUrl>#icon-1528-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -113.514884,53.583232,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Metro Line: Northwest - Underpass</name>
+      <Placemark>
+        <name>Tunnel under CN Rail Line</name>
+        <styleUrl>#icon-1724-4E342E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -113.566511,53.614564,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CN Rail Line</name>
+        <styleUrl>#icon-1662-424242-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -113.565426,53.614581,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

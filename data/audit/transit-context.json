@@ -1,0 +1,509 @@
+{
+  "preparedDate": "2026-11-03",
+  "operatingStations": 30,
+  "operatingRoutes": 3,
+  "lineStationCounts": {
+    "capital": 15,
+    "metro": 10,
+    "valley": 12
+  },
+  "sharedCapitalMetroStations": 7,
+  "plannedOrNotYetOpenStations": 30,
+  "plannedCorridors": 7,
+  "plannedStationCountsByPhase": {
+    "valley-west": 16,
+    "capital-south-1": 2,
+    "capital-south-2": 3,
+    "capital-north": 1,
+    "metro-gate": 1,
+    "metro-nw-2": 4,
+    "metro-nw-3": 3
+  },
+  "sources": [
+    {
+      "file": "data/audit/transit-source/stations.csv",
+      "url": "https://docs.google.com/spreadsheets/d/1Ck1sRA-0nI9WHf_mFdagqlc4deIbF-9vsOgKy1tL-f4/gviz/tq?tqx=out:csv&sheet=Stations",
+      "retrievedDate": "2026-11-03",
+      "bytes": 6414,
+      "sha256": "71081396aaa149eb34bc3959429547c9b7997ad7d8f1b7ba22f7d9c40f3a3c29"
+    },
+    {
+      "file": "data/audit/transit-source/capital-shape.json",
+      "url": "https://data.edmonton.ca/resource/ctwr-tvrd.json?shape_id=021R-68-North&%24select=shape_id%2Ctrip_headsign%2Cgeometry_line%2Cline_length&%24limit=1",
+      "retrievedDate": "2026-11-03",
+      "bytes": 7622,
+      "sha256": "e55e5d45a147680d19b2b66dbc07b3fc76d49c399c10d6a02a0b170367cd41c5"
+    },
+    {
+      "file": "data/audit/transit-source/metro-shape.json",
+      "url": "https://data.edmonton.ca/resource/ctwr-tvrd.json?shape_id=022R-82-South&%24select=shape_id%2Ctrip_headsign%2Cgeometry_line%2Cline_length&%24limit=1",
+      "retrievedDate": "2026-11-03",
+      "bytes": 5428,
+      "sha256": "6c59ab0d85fa986452ee21b22187f668f587da2e3ec16bd8b3306067afb455a4"
+    },
+    {
+      "file": "data/audit/transit-source/valley-shape.json",
+      "url": "https://data.edmonton.ca/resource/ctwr-tvrd.json?shape_id=023R-18-North&%24select=shape_id%2Ctrip_headsign%2Cgeometry_line%2Cline_length&%24limit=1",
+      "retrievedDate": "2026-11-03",
+      "bytes": 8219,
+      "sha256": "dc068f1d84e9a86ad550bb8f330c56cb041a602b4d07588047baee2c72d6c8d7"
+    },
+    {
+      "file": "data/audit/transit-source/valley-west.kml",
+      "url": "https://www.google.com/maps/d/kml?mid=1s78pE99lwGtjs8ZBqgEch3I9gjs&forcekml=1",
+      "retrievedDate": "2026-11-03",
+      "bytes": 32328,
+      "sha256": "087295855abf45c0f7725b46467d53fe5247c0431f2d4ea29a6d607013087be8"
+    },
+    {
+      "file": "data/audit/transit-source/capital-south.kml",
+      "url": "https://www.google.com/maps/d/kml?mid=1zYff0Vgzfeg076BC4pYPOn1RkfPUKKw&forcekml=1",
+      "retrievedDate": "2026-11-03",
+      "bytes": 12020,
+      "sha256": "67527a0ff97171cc380b709c7d27115952621fda80596e0efaf44491188aa287"
+    },
+    {
+      "file": "data/audit/transit-source/capital-north.kml",
+      "url": "https://www.google.com/maps/d/kml?mid=1BQT2Q1vqmLX6iEVHT6I_PeoqgL4&forcekml=1",
+      "retrievedDate": "2026-11-03",
+      "bytes": 3270,
+      "sha256": "c30d450cce54bf023cc43d1af876a5fe648822a898af2a176506384ba78c460b"
+    },
+    {
+      "file": "data/audit/transit-source/metro-nw.kml",
+      "url": "https://www.google.com/maps/d/kml?mid=1MnSElJBgHkL4J7Qk5-5aBVW61RFywjU&forcekml=1",
+      "retrievedDate": "2026-11-03",
+      "bytes": 32050,
+      "sha256": "4a828e03d5bb30d1b2fae22b140bce70f3ac0e803d80943e7d609643f8a6ec7b"
+    }
+  ],
+  "operatingStatusSource": "https://www.edmonton.ca/ets/lrt-station-locations",
+  "projectStatusSource": "https://www.edmonton.ca/projects_plans/transit/lrt-construction-update",
+  "licenseUrl": "https://www.edmonton.ca/city_government/initiatives_innovation/open-data",
+  "operatingStationRouteDistances": [
+    {
+      "station": "Bay/Enterprise Square",
+      "metres": 3.34
+    },
+    {
+      "station": "Belvedere",
+      "metres": 11.29
+    },
+    {
+      "station": "Central",
+      "metres": 2.21
+    },
+    {
+      "station": "Century Park",
+      "metres": 1.99
+    },
+    {
+      "station": "Churchill (underground)",
+      "metres": 3.7
+    },
+    {
+      "station": "Clareview",
+      "metres": 11.59
+    },
+    {
+      "station": "Coliseum",
+      "metres": 5.15
+    },
+    {
+      "station": "Corona",
+      "metres": 0.0
+    },
+    {
+      "station": "Government Centre",
+      "metres": 3.3
+    },
+    {
+      "station": "Health Sciences/Jubilee",
+      "metres": 1.13
+    },
+    {
+      "station": "Kingsway/Royal Alex",
+      "metres": 3.5
+    },
+    {
+      "station": "MacEwan",
+      "metres": 3.31
+    },
+    {
+      "station": "McKernan/Belgravia",
+      "metres": 0.3
+    },
+    {
+      "station": "NAIT/Blatchford Market",
+      "metres": 69.84
+    },
+    {
+      "station": "South Campus/Fort Edmonton Park",
+      "metres": 0.26
+    },
+    {
+      "station": "Southgate",
+      "metres": 5.61
+    },
+    {
+      "station": "Stadium",
+      "metres": 2.27
+    },
+    {
+      "station": "University",
+      "metres": 16.65
+    },
+    {
+      "station": "Mill Woods",
+      "metres": 2.7
+    },
+    {
+      "station": "Grey Nuns",
+      "metres": 2.43
+    },
+    {
+      "station": "Millbourne/Woodvale",
+      "metres": 9.81
+    },
+    {
+      "station": "Davies",
+      "metres": 8.38
+    },
+    {
+      "station": "Avonmore",
+      "metres": 11.02
+    },
+    {
+      "station": "Bonnie Doon",
+      "metres": 7.66
+    },
+    {
+      "station": "Holyrood",
+      "metres": 15.74
+    },
+    {
+      "station": "Strathearn",
+      "metres": 9.31
+    },
+    {
+      "station": "Muttart",
+      "metres": 2.22
+    },
+    {
+      "station": "Quarters",
+      "metres": 7.91
+    },
+    {
+      "station": "Churchill (street level)",
+      "metres": 3.67
+    },
+    {
+      "station": "102 Street",
+      "metres": 22.12
+    }
+  ],
+  "plannedStationRouteDistances": [
+    {
+      "station": "NorQuest",
+      "phase": "valley-west",
+      "metres": 0.53
+    },
+    {
+      "station": "MacEwan Arts/112 Street",
+      "phase": "valley-west",
+      "metres": 0.05
+    },
+    {
+      "station": "Wîhkwêntôwin ᐄᐧᐦᑫᐧᐣᑑᐃᐧᐣ/116 Street",
+      "phase": "valley-west",
+      "metres": 20.04
+    },
+    {
+      "station": "Brewery/120 Street",
+      "phase": "valley-west",
+      "metres": 2.13
+    },
+    {
+      "station": "124 Street",
+      "phase": "valley-west",
+      "metres": 1.52
+    },
+    {
+      "station": "Glenora",
+      "phase": "valley-west",
+      "metres": 1.56
+    },
+    {
+      "station": "Grovenor/142 Street",
+      "phase": "valley-west",
+      "metres": 3.04
+    },
+    {
+      "station": "Stony Plain Road/149 Street",
+      "phase": "valley-west",
+      "metres": 0.04
+    },
+    {
+      "station": "Jasper Place",
+      "phase": "valley-west",
+      "metres": 15.74
+    },
+    {
+      "station": "Glenwood/Sherwood",
+      "phase": "valley-west",
+      "metres": 1.05
+    },
+    {
+      "station": "Meadowlark",
+      "phase": "valley-west",
+      "metres": 22.11
+    },
+    {
+      "station": "Misericordia",
+      "phase": "valley-west",
+      "metres": 0.45
+    },
+    {
+      "station": "West Edmonton Mall",
+      "phase": "valley-west",
+      "metres": 0.19
+    },
+    {
+      "station": "Aldergrove/Belmead",
+      "phase": "valley-west",
+      "metres": 7.61
+    },
+    {
+      "station": "Lewis Farms",
+      "phase": "valley-west",
+      "metres": 3.59
+    },
+    {
+      "station": "Alex Decoteau",
+      "phase": "valley-west",
+      "metres": 4.26
+    },
+    {
+      "station": "Provincial Lands",
+      "phase": "capital-south-2",
+      "metres": 4.15
+    },
+    {
+      "station": "Heritage Valley Town Centre",
+      "phase": "capital-south-2",
+      "metres": 9.07
+    },
+    {
+      "station": "Desrochers/Allard",
+      "phase": "capital-south-2",
+      "metres": 3.82
+    },
+    {
+      "station": "Heritage Valley North",
+      "phase": "capital-south-1",
+      "metres": 0.48
+    },
+    {
+      "station": "Twin Brooks",
+      "phase": "capital-south-1",
+      "metres": 2.16
+    },
+    {
+      "station": "Gorman",
+      "phase": "capital-north",
+      "metres": 2.29
+    },
+    {
+      "station": "Blatchford Gate",
+      "phase": "metro-gate",
+      "metres": 21.84
+    },
+    {
+      "station": "132 Avenue",
+      "phase": "metro-nw-2",
+      "metres": 0.25
+    },
+    {
+      "station": "137 Avenue",
+      "phase": "metro-nw-2",
+      "metres": 0.67
+    },
+    {
+      "station": "145 Avenue",
+      "phase": "metro-nw-2",
+      "metres": 0.0
+    },
+    {
+      "station": "Castle Downs",
+      "phase": "metro-nw-2",
+      "metres": 3.24
+    },
+    {
+      "station": "127 Street",
+      "phase": "metro-nw-3",
+      "metres": 0.0
+    },
+    {
+      "station": "137 Street",
+      "phase": "metro-nw-3",
+      "metres": 0.0
+    },
+    {
+      "station": "Campbell Road",
+      "phase": "metro-nw-3",
+      "metres": 5.45
+    }
+  ],
+  "excludedFeatures": [
+    {
+      "source": "valley-west",
+      "name": "Lewis Farms LRT terminus site",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "87 Avenue and 178 Street",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "Jasper Place Transit Centre",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "156 Street and Stony Plain Road",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "Stony Plain Road and 149 Street",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "124 Street Stop",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "LRT sidetrack",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "Stony Plain Rd & Groat Rd Bridge",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "Bridge Over 170 Street",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "West Edmonton Mall Transit Centre",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "Lewis Farms Kiss 'n' Ride",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "Lewis Farms Transit Centre",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "Lewis Farms Park 'n' Ride",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "valley-west",
+      "name": "Bridge over Anthony Henday Drive",
+      "reason": "Not current route/station layer; bridges, parking, transit centres and superseded proposed-change markers excluded."
+    },
+    {
+      "source": "capital-south",
+      "name": "Heritage Valley Park & Ride",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "capital-south",
+      "name": "Blackmud Creek LRT Bridge",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "capital-south",
+      "name": "Bridge Over Anthony Henday Drive",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "capital-south",
+      "name": "Llew Lawrence Operations and Maintenance Facility",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "metro-nw",
+      "name": "NAIT/ Blatchford Market Station",
+      "reason": "Operating NAIT/Blatchford Market already included from current ETS locator; not a future station."
+    },
+    {
+      "source": "metro-nw",
+      "name": "137 Ave Transit Centre",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "metro-nw",
+      "name": "Castle Downs Transit Centre",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "metro-nw",
+      "name": "Canpbell Road Transit Centre",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "metro-nw",
+      "name": "Campbell Road Park and Ride",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "metro-nw",
+      "name": "Bridge over Yellowhead Trail and CN Walker Yard",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "metro-nw",
+      "name": "Tunnel under CN Rail Line",
+      "reason": "Non-station infrastructure excluded."
+    },
+    {
+      "source": "metro-nw",
+      "name": "CN Rail Line",
+      "reason": "Non-station infrastructure excluded."
+    }
+  ],
+  "method": [
+    "Operating paths use representative official GTFS trip shapes, retaining their geographic coordinates. Primary northbound Capital/Valley and southbound Metro shapes cover the complete normal service routes, not every scheduled short-turn variant.",
+    "The broad LRT Routes dataset rpjw-4jft draws Metro south to Century Park. This was rejected for current service: the current ETS station page and GTFS shape 022R-82-South agree on Health Sciences/Jubilee as the southern terminus.",
+    "The LRT Stations and Stops dataset fhxi-cnhe omits the new NAIT/Blatchford Market location. The 30-row table published through the current ETS station-locator page supplies station names, line membership and coordinates instead.",
+    "Capital/Metro shared stations appear once with both lineIds. Churchill underground and the Valley street-level Churchill stop remain separate physically distinct points.",
+    "Future coordinates come only from official City project maps embedded on current project pages. All are marked schematic, not final engineering survey positions.",
+    "Valley West and Capital South Phase 1 are construction, not operating. Blatchford Gate is built but remains closed until service standards are met. Metro Northwest Phase 2 has land-acquisition funding but no secured construction funding; phases marked unfunded refer to construction.",
+    "Proposed-change layers, park-and-ride markers, bridges and transit-centre markers are excluded from station counts. NAIT/Blatchford is not duplicated as future. Station and line names may change as projects advance.",
+    "This is a dated infrastructure snapshot, not real-time service or disruption information. No speculative route or station coordinates were invented."
+  ],
+  "files": {
+    "lrt-operating.geojson": {
+      "bytes": 32024,
+      "sha256": "4c3b629d388f2bec67146e808eb063f8b586bfb531088dc53ab16243cd9a944e"
+    },
+    "lrt-planned.geojson": {
+      "bytes": 29369,
+      "sha256": "ee85991f628974a85bdf46073aca05c9cddc19b61cb0d86d9a418c20ed867eaa"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Official geographic and LRT context snapshots; independent of unchanged 2021 census statistics.",
+  "asOf": "2026-11-03",
+  "files": {
+    "public/data/lrt-operating.geojson": {
+      "bytes": 32024,
+      "sha256": "4c3b629d388f2bec67146e808eb063f8b586bfb531088dc53ab16243cd9a944e"
+    },
+    "public/data/lrt-planned.geojson": {
+      "bytes": 29369,
+      "sha256": "ee85991f628974a85bdf46073aca05c9cddc19b61cb0d86d9a418c20ed867eaa"
+    },
+    "public/data/geographic-context.geojson": {
+      "bytes": 518342,
+      "sha256": "f693558614544927560fc38dc7a5d77f5b73c00070544d6ffd675741d750952b"
+    }
+  },
+  "expected": {
+    "operatingStations": 30,
+    "plannedStations": 30
+  }
+}
