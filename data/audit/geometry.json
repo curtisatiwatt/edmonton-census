@@ -1,0 +1,49 @@
+{
+  "preparedDate": "2026-11-03",
+  "boundaryVintage": 2021,
+  "boundaryCount": 403,
+  "typeClassification": "The official boundary dataset has no residential/industrial land-use category. All units retain the neutral type Neighbourhood; no land-use classification is inferred.",
+  "boundarySource": "https://data.edmonton.ca/d/5bk4-5txu",
+  "roadSource": "https://data.edmonton.ca/d/9j8t-zm52",
+  "waterSource": "https://data.edmonton.ca/d/ndtw-vdfy",
+  "downloadQueries": {
+    "boundaries": "https://data.edmonton.ca/resource/5bk4-5txu.json?%24limit=5000&%24order=neighbourh",
+    "roads": "https://data.edmonton.ca/resource/9j8t-zm52.json?%24select=centerlineid%2Cfunctional_class_code%2Cstreet_name_full_abbrev%2Cstreet_name_full%2Cgeometry&%24where=starts_with%28functional_class_code%2C%27Arterial-%27%29&%24limit=50000&%24order=centerlineid",
+    "water": "https://data.edmonton.ca/resource/ndtw-vdfy.json?%24select=id%2Chydro_feature_type%2Chydro_feature_name%2Cgeometry_multipolygon&%24where=hydro_feature_name+is+not+null&%24limit=5000&%24order=id"
+  },
+  "rawCounts": {
+    "boundaries": 403,
+    "roads": 8888,
+    "water": 116
+  },
+  "roadFeatureCount": 533,
+  "waterFeatureCount": 87,
+  "roadFilter": "starts_with(functional_class_code,'Arterial-')",
+  "waterFilter": "hydro_feature_name is not null",
+  "roadMissingGeometrySkipped": 0,
+  "bounds": [
+    -113.713802,
+    53.337361,
+    -113.271526,
+    53.715919
+  ],
+  "geometryProcessing": "WGS84 -> UTM zone 12N (EPSG:32612). Topology-preserving simplification: neighbourhoods 2m, roads 3m, water 2m. WGS84 output snapped to a 1e-6 degree precision grid using GEOS valid_output mode, then serialized to 6 decimal places. Invalid polygon inputs repaired with GEOS make_valid; all output polygons verified valid.",
+  "anchorMethod": "Projected area centroid when strictly inside final polygon; otherwise GEOS representative point. Every final anchor verified strictly inside its rounded output polygon. Display locations are not household positions.",
+  "interiorAnchorCount": 403,
+  "fallbackAnchorCount": 11,
+  "repairedBoundaryCodes": [],
+  "repairedWaterIds": [],
+  "cartographicVintageNote": "This is the historical boundary dataset linked by the City 2021 census metadata. The City custom census tabulation was acquired in 2023 and groups some small industrial/river-valley areas with nearby neighbourhoods; statistics are joined by official neighbourhood code and are not redistributed across these polygons. Roads and named hydrology are a separately downloaded current cartographic reference, not census inputs.",
+  "licenseAttribution": "Contains information licensed under the Open Government Licence – City of Edmonton.",
+  "licenseUrl": "https://data.edmonton.ca/stories/s/Open-Government-Licence-Edmonton/msh8-if28/",
+  "runtimeNetwork": "None required for map geometry: all GeoJSON is self-hosted with the application.",
+  "rawSha256": {
+    "boundaries": "93401afcbb88ab1da9f33507eb5acc11cdcdf0a0a9637c37a0d5c304868fc5b0",
+    "roads": "0e5f140f09424b388f2b73d67f77f4659fdc8be3dae912b3792727b49a423aeb",
+    "water": "7503d93f02530abbcb6b4c2738af44f7bc44d411eaebc6f148d14799d865c766"
+  },
+  "outputBytes": {
+    "boundaries.geojson": 569134,
+    "basemap.geojson": 1336095
+  }
+}

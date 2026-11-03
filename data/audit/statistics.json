@@ -1,0 +1,260 @@
+{
+  "builtAt": "2026-11-03T17:10:40.575834+00:00",
+  "sourceSnapshotVerifiedAt": "2026-11-03",
+  "coverage": {
+    "boundaryCount": 403,
+    "publishedNeighbourhoodRows": 279,
+    "incomePublished": 277,
+    "chinesePublished": 278,
+    "populationPrivatePublished": 279,
+    "householdSizePublished": 278,
+    "zeroChineseCount": 16,
+    "boundariesWithoutStatistics": 124,
+    "boundariesMissingIncome": 126,
+    "boundariesMissingChinese": 125
+  },
+  "allPublishedCodesMatchGeometry": true,
+  "dedicatedChineseCrossCheck": {
+    "compared": 279,
+    "mismatches": 0,
+    "includesSuppressed": true
+  },
+  "fieldMapping": {
+    "population / populationPrivate": {
+      "dataset": "rw8s-vqrs",
+      "code": "50"
+    },
+    "populationTotal": {
+      "dataset": "rw8s-vqrs",
+      "code": "1"
+    },
+    "childrenCount": {
+      "dataset": "rw8s-vqrs",
+      "code": "2"
+    },
+    "children": {
+      "dataset": "rw8s-vqrs",
+      "code": "28",
+      "transform": "published percentage / 100"
+    },
+    "households": {
+      "dataset": "rw8s-vqrs",
+      "code": "43"
+    },
+    "householdSize": {
+      "dataset": "rw8s-vqrs",
+      "code": "49"
+    },
+    "income": {
+      "dataset": "9325-erna",
+      "code": "242",
+      "label": "Median total income of household in 2020 ($)"
+    },
+    "householdsLongForm": {
+      "dataset": "9325-erna",
+      "code": "241"
+    },
+    "chineseCount": {
+      "dataset": "9325-erna",
+      "code": "1642",
+      "ancestor": "1639"
+    },
+    "chinesePopulationBase": {
+      "dataset": "9325-erna",
+      "code": "1639"
+    },
+    "chinesePct": {
+      "transform": "chineseCount / chinesePopulationBase; no substitution of short-form population"
+    }
+  },
+  "sources": [
+    {
+      "key": "short-core",
+      "url": "https://data.edmonton.ca/resource/rw8s-vqrs.json?%24where=characteristics_code+in+%281%2C2%2C28%2C43%2C49%2C50%29&%24order=neighbourhood_number%2Ccharacteristics_code&%24limit=10000",
+      "rows": 1692,
+      "sha256": "947a1c98f3c2042e665a5f73bad68d8f8a802458a5555f59deea2c3875822b76"
+    },
+    {
+      "key": "long-core",
+      "url": "https://data.edmonton.ca/resource/9325-erna.json?%24where=characteristics_code+in+%2834%2C241%2C242%2C1639%2C1642%29&%24order=neighbourhood_number%2Ccharacteristics_code&%24limit=10000",
+      "rows": 1410,
+      "sha256": "8c1ff232af6c11e0a16f6a6ab637d0b367ded3882b054a862803894d3e18b88a"
+    },
+    {
+      "key": "chinese-core",
+      "url": "https://data.edmonton.ca/resource/am8d-inje.json?%24where=gender%3D%27Total%27+AND+characteristic+in+%28%27Chinese%27%2C%27Total+visible+minority+population%27%2C%27Not+a+visible+minority%27%29&%24order=neighbourhood_number%2Ccharacteristic&%24limit=10000",
+      "rows": 837,
+      "sha256": "229cb9725e066c6640f904388989a296e9b9580a6b63e8ffe8ea8124e9605e63"
+    }
+  ],
+  "missingValueCodes": {
+    "x": "suppressed",
+    "...": "not-applicable",
+    "..": "not-available",
+    "-": "missing",
+    "F": "unreliable",
+    "": "missing"
+  },
+  "suppressed": [
+    {
+      "code": "3490",
+      "name": "Goodridge Corners",
+      "incomeStatus": "suppressed",
+      "chineseStatus": "suppressed"
+    },
+    {
+      "code": "5520",
+      "name": "University of Alberta",
+      "incomeStatus": "suppressed",
+      "chineseStatus": "published"
+    }
+  ],
+  "unmatchedBoundaryCodes": [
+    "1111",
+    "1120",
+    "1190",
+    "1200",
+    "1270",
+    "1280",
+    "2160",
+    "2311",
+    "2360",
+    "2380",
+    "2462",
+    "2630",
+    "2640",
+    "2650",
+    "2671",
+    "2690",
+    "3050",
+    "3160",
+    "3220",
+    "3230",
+    "3290",
+    "3360",
+    "3380",
+    "3381",
+    "3382",
+    "4010",
+    "4011",
+    "4012",
+    "4013",
+    "4014",
+    "4015",
+    "4016",
+    "4017",
+    "4018",
+    "4019",
+    "4021",
+    "4022",
+    "4023",
+    "4024",
+    "4030",
+    "4050",
+    "4100",
+    "4130",
+    "4150",
+    "4170",
+    "4190",
+    "4210",
+    "4300",
+    "4320",
+    "4330",
+    "4340",
+    "4350",
+    "4400",
+    "4410",
+    "4440",
+    "4451",
+    "4467",
+    "4469",
+    "4475",
+    "4478",
+    "4485",
+    "4490",
+    "4510",
+    "4530",
+    "4600",
+    "4630",
+    "4640",
+    "4650",
+    "4660",
+    "4670",
+    "5050",
+    "5110",
+    "5120",
+    "5151",
+    "5370",
+    "5380",
+    "5390",
+    "5400",
+    "5401",
+    "5405",
+    "5456",
+    "5466",
+    "5530",
+    "5550",
+    "5560",
+    "5565",
+    "5575",
+    "6090",
+    "6100",
+    "6110",
+    "6160",
+    "6170",
+    "6180",
+    "6190",
+    "6195",
+    "6214",
+    "6250",
+    "6260",
+    "6380",
+    "6420",
+    "6430",
+    "6445",
+    "6491",
+    "6492",
+    "6500",
+    "6510",
+    "6540",
+    "6560",
+    "6570",
+    "6590",
+    "6620",
+    "6630",
+    "6640",
+    "6650",
+    "6665",
+    "6667",
+    "6668",
+    "6669",
+    "6690",
+    "6700",
+    "6780",
+    "8885",
+    "8886",
+    "8887"
+  ],
+  "combinedGeographyMappingProvided": false,
+  "sourceNameDifferences": [
+    {
+      "code": "2691",
+      "boundaryName": "Horse Hill Neighbourhood 1A",
+      "statisticalName": "HORSE HILL NEIGHBOURHOOD"
+    }
+  ],
+  "combinedGeographyTreatment": "No component/receiver mapping in methodology. Join only exact published official neighbourhood code. Do not copy values to other polygons or claim a perfect statistical-boundary match.",
+  "neighbourhoodSumPrivatePopulation": 996485,
+  "neighbourhoodSumChinese": 59720,
+  "city": {
+    "city": "Edmonton",
+    "cityIncomeMedian": 90000,
+    "cityChineseCount": 59740,
+    "cityChinesePct": 0.059950726804718586,
+    "cityChinesePopulationBase": 996485,
+    "cityPopulationPrivate": 996495,
+    "cityPopulationTotal": 1010900,
+    "cityChildrenPct": 0.182,
+    "cityHouseholdSize": 2.5
+  }
+}
