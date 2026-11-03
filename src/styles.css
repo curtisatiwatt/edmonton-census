@@ -134,7 +134,10 @@ h1,h2,h3,p{margin:0}
 .community-tooltip.leaflet-tooltip:before{border-top-color:#243f42}
 .community-tooltip strong{display:block;font-size:12px;margin-bottom:2px}
 .community-tooltip .tip-note{display:block;border-top:1px solid #ffffff30;margin-top:5px;padding-top:5px;color:#d8e6db}
-.leaflet-interactive:focus{outline:2px solid #223e40}
+/* Pointer clicks select the geographic outline; reserve focus rings for keyboard navigation. */
+.leaflet-container:focus:not(:focus-visible),.leaflet-interactive:focus:not(:focus-visible){outline:none}
+.leaflet-container:focus-visible{outline:3px solid #38a2a8;outline-offset:-3px}
+.leaflet-interactive:focus-visible{outline:2px solid #223e40}
 .leaflet-pane.leaflet-labels-pane{pointer-events:none}
 .map-section:after{content:'';pointer-events:none;position:absolute;inset:0;box-shadow:inset 2px 0 10px #30443305;z-index:700}
 
