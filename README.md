@@ -12,6 +12,10 @@
 源码：<https://github.com/curtisatiwatt/edmonton-census>
 在线地图：<https://curtisatiwatt.github.io/edmonton-census/>
 
+地图右上角的 **专注地图 / Focus map** 可收起顶部和社区详情栏，扩大地图浏览空间；同一按钮或 `Esc` 恢复。切换保留当前视野、已选社区与人口类别，手机同样可用。
+
+道路名称按当前可见路段定位，放大后逐步显示主要道路、河流水域和少量重点地标；它们参与标注避让，避免远景挤满文字。地理补充仅用于社区构成。
+
 ## 开发与预览
 
 使用 **Node.js 24 + Vite + Leaflet**，日常开发无需 Python、API key、数据库或外部地图瓦片服务。
@@ -43,6 +47,7 @@ npm run preview   # 查看生产构建
 | `src/map-tooltip.js` | 每张地图共用一个悬停卡片，拖动与缩放时清理 |
 | `public/data/communities.geojson` | 原有 403 个社区边界、收入及统计快照，保留原值 |
 | `public/data/population-groups.json` | 13 类人口人数、同表分母与全市基准 |
+| `public/data/orientation-landmarks.geojson` | 少量有官方来源的定位地标点 |
 | `public/data/basemap.geojson` | 道路与水域几何 |
 | `public/data/lrt-operating.geojson` / `lrt-planned.geojson` | 运营 LRT 与未运营扩建线路及站点 |
 | `public/data/geographic-context.geojson` | 公园、机场、铁路与保留区背景 |

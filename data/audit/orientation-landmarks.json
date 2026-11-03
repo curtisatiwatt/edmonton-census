@@ -1,0 +1,93 @@
+{
+  "preparedDate": "2026-11-03",
+  "purpose": "A small set of orientation landmarks, shown only at closer zooms. These records do not change census values or community boundaries.",
+  "coordinateMethod": "Official City WGS84 points, rounded to 7 decimals; no manual relocation. Public venue address matching is documented per record.",
+  "sources": [
+    {
+      "label": "City of Edmonton — City-owned attractions",
+      "url": "https://data.edmonton.ca/d/7yt8-7467",
+      "queryUrl": "https://data.edmonton.ca/resource/7yt8-7467.json?$limit=1000"
+    },
+    {
+      "label": "City of Edmonton — Register and Inventory of Historic Resources",
+      "url": "https://data.edmonton.ca/d/jgsn-dhai",
+      "queryUrl": "https://data.edmonton.ca/resource/jgsn-dhai.json?$where=upper(name_of_historic_resource)%20like%20%27%25LEGISLATURE%25%27"
+    },
+    {
+      "label": "City of Edmonton — Property Assessment Data (Current Calendar Year), public venue address points",
+      "url": "https://data.edmonton.ca/d/q7d6-ambg",
+      "note": "Coordinates matched by the exact public venue street address; identical coordinate duplicates collapsed. Assessment values are not used or included."
+    }
+  ],
+  "licenseUrl": "https://www.edmonton.ca/city_government/initiatives_innovation/open-data-terms-of-use",
+  "records": [
+    {
+      "source": "attractions",
+      "sourceName": "Muttart Conservatory",
+      "displayName": "Muttart Conservatory",
+      "coordinates": [
+        -113.47727303300204,
+        53.53520457452499
+      ]
+    },
+    {
+      "source": "attractions",
+      "sourceName": "Telus World of Science Edmonton",
+      "displayName": "TELUS World of Science",
+      "coordinates": [
+        -113.5640339433041,
+        53.56121966566756
+      ]
+    },
+    {
+      "source": "attractions",
+      "sourceName": "Commonwealth Stadium",
+      "displayName": "Commonwealth Stadium",
+      "coordinates": [
+        -113.47612691065851,
+        53.559733375944475
+      ]
+    },
+    {
+      "source": "historic",
+      "sourceName": "Alberta Legislature Building",
+      "displayName": "Alberta Legislature",
+      "address": "10801 - 97 Avenue",
+      "coordinates": [
+        -113.50558238282045,
+        53.53252262480456
+      ]
+    },
+    {
+      "source": "addresses",
+      "displayName": "West Edmonton Mall",
+      "address": "8882 170 STREET NW",
+      "sourceAccountNumbers": [
+        "3054384"
+      ],
+      "coordinates": [
+        -113.6229648999618,
+        53.52232562629508
+      ],
+      "addressVerificationUrl": "https://www.wem.ca/plan-your-visit/how-to-get-here/",
+      "coordinateMethod": "Exact-match City assessment point for the public venue address, confirmed on venue website. Duplicate address records have the same point."
+    },
+    {
+      "source": "addresses",
+      "displayName": "Rogers Place",
+      "address": "10220 104 AVENUE NW",
+      "sourceAccountNumbers": [
+        "10842669",
+        "10827005"
+      ],
+      "coordinates": [
+        -113.49733449925235,
+        53.547012643214664
+      ],
+      "addressVerificationUrl": "https://www.rogersplace.com/getting-to-rogers-place/",
+      "coordinateMethod": "Exact-match City assessment point for the public venue address, confirmed on venue website. Duplicate address records have the same point."
+    }
+  ],
+  "featureCount": 6,
+  "outputSha256": "8351bc41e17f7a322480786a7bafeceb4a9969ad07c0f5c076e856aa7528d996"
+}

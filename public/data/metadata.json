@@ -126,6 +126,18 @@
     {
       "label": "City of Edmonton · GTFS trip geometries",
       "url": "https://data.edmonton.ca/d/ctwr-tvrd"
+    },
+    {
+      "label": "City of Edmonton · Attractions",
+      "url": "https://data.edmonton.ca/d/7yt8-7467"
+    },
+    {
+      "label": "City of Edmonton · Historic resources",
+      "url": "https://data.edmonton.ca/d/jgsn-dhai"
+    },
+    {
+      "label": "City of Edmonton · Address locations",
+      "url": "https://data.edmonton.ca/d/q7d6-ambg"
     }
   ],
   "coverage": {
