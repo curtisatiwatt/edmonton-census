@@ -156,16 +156,7 @@
   "populationYear": 2021,
   "preparedDate": "2026-11-03",
   "latestCensusNote": "2026 年联邦普查已完成采集，但截至 2026-11-03 尚未公布结果。首次人口结果计划于 2027-02-10 发布；收入为 2027-07-14；民族文化资料为 2027-10-27。本图仍使用已发布的 2021 年社区数据。",
-  "shortlist": [
-    "Windermere",
-    "Glenora",
-    "Westbrook Estates",
-    "Bulyea Heights",
-    "Terwillegar Towne",
-    "Windsor Park"
-  ],
   "license": "统计资料改编自 Statistics Canada 2021 Census，经 City of Edmonton 发布；本产品不代表 Statistics Canada 的认可。地理资料分别依 City of Edmonton Open Government Licence、Open Government Licence – Alberta 和 Open Government Licence – Canada 使用。Leaflet 采用 BSD 2-Clause 许可。",
-  "referenceMethod": "参考说明由已公布收入与全市中位数比值、儿童比例、住户规模及小统计分母生成；不依据族裔推断教育质量、安全或个人特征。学校与通勤需按具体地址查询。",
   "populationGroupsDefinition": "人口视图采用市府 2021 年普查定制汇总的 13 个 Visible Minority（Racialized Population）互斥分类，默认勾选全市人数最多的五个可见少数族裔类别。非可见少数族裔为普查分类，包含原住民等人口，不可视作白人或欧洲裔。",
   "populationGroupsCoverage": 278,
   "populationGroupsBase": 996485,

@@ -8,8 +8,8 @@ import { translate } from '../src/i18n.js';
 const read = path => JSON.parse(fs.readFileSync(new URL(`../public/data/${path}`, import.meta.url), 'utf8'));
 const communities = JSON.parse(fs.readFileSync(new URL('../public/data/communities.geojson', import.meta.url), 'utf8')).features;
 
-test('every published Edmonton reference and caveat has an English equivalent', () => {
-  for (const feature of communities) for (const key of ['note', 'caveat']) {
+test('every published Edmonton data caveat has an English equivalent', () => {
+  for (const feature of communities) for (const key of ['caveat']) {
     const text = feature.properties[key];
     if (!text) continue;
     const translated = translateEdmontonReference(text);
@@ -18,13 +18,11 @@ test('every published Edmonton reference and caveat has an English equivalent', 
   }
 });
 
-test('translated caveats retain suppressed values, small bases and incompatible populations', () => {
+test('translated caveats retain suppressed values and incompatible populations', () => {
   const byCode = new Map(communities.map(f => [f.properties.code, f.properties]));
   assert.match(translateEdmontonReference(byCode.get('3490').caveat), /1,320/);
   assert.match(translateEdmontonReference(byCode.get('3490').caveat), /different populations/);
-  assert.match(translateEdmontonReference(byCode.get('5520').note), /small statistical denominator/);
   assert.match(translateEdmontonReference(byCode.get('2691').caveat), /HORSE HILL NEIGHBOURHOOD/);
-  assert.match(translateEdmontonReference(byCode.get('1010').note), /0\.75 times/);
 });
 
 

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-04",
+  "sourceCommit": "1e3431890c7dafac2bd6e1270dd8ef2a849a0c19",
+  "operation": "Remove editorial community-selection advice from the public dataset.",
+  "removedFields": [
+    "features[].properties.note"
+  ],
+  "removedCount": 403,
+  "inputSha256": "b9e8518927e982753f2526f2204e1fdf013c343ae5eeb72b7be71e077c3dcb35",
+  "outputSha256": "f2b34e3f3b80706df65001c1ef4454f819b7592d1cae73a3b024966115d3ff1c",
+  "outputBytes": 791125,
+  "validation": "Parsed output was deeply compared to the previous published collection after deleting only properties.note. Every geometry, official statistic, source, identifier and data caveat is unchanged."
+}

@@ -55,7 +55,7 @@ test('Chinese shares use the matching long-form denominator, not short-form resi
   assert.equal(windermere.children, 0.237);
 });
 
-test('suppressed values and small statistical bases remain visible in their explanations', () => {
+test('suppressed values and small statistical bases remain intact', () => {
   const goodridge = byCode.get('3490');
   assert.equal(goodridge.income, null);
   assert.equal(goodridge.chineseCount, null);
@@ -67,7 +67,7 @@ test('suppressed values and small statistical bases remain visible in their expl
   assert.equal(university.income, null);
   assert.equal(university.chineseCount, 70);
   assert.equal(university.chinesePopulationBase, 215);
-  assert.match(university.note, /分母较小/);
+  assert.equal(university.chinesePct, 70 / 215);
   assert.match(byCode.get('2691').caveat, /HORSE HILL NEIGHBOURHOOD/);
 });
 
@@ -81,4 +81,17 @@ test('city comparisons and data years use the published city row', () => {
   assert.equal(metadata.populationLabel, '私人住户人口');
   assert.match(metadata.boundaryNote, /2023/);
   assert.match(metadata.boundaryNote, /未提供逐区合并对应表/);
+});
+
+// Editorial advice is not part of the official statistical snapshot.
+test('public data omits editorial advice and curated neighbourhood shortlists', () => {
+  for (const row of communities) assert.ok(!Object.hasOwn(row, 'note'), row.code);
+  assert.ok(!Object.hasOwn(metadata, 'shortlist'));
+  assert.ok(!Object.hasOwn(metadata, 'referenceMethod'));
+});
+
+test('community geometries still match the official boundary snapshot', () => {
+  const boundaries = read('data/source/boundaries.geojson').features;
+  const actual = new Map(read('public/data/communities.geojson').features.map(f => [f.properties.code, f.geometry]));
+  for (const feature of boundaries) assert.deepEqual(actual.get(feature.properties.code), feature.geometry, feature.properties.code);
 });

@@ -20,20 +20,11 @@ const phrases = {
   'LRT 扩建线路': 'LRT extensions',
   '未运营扩建': 'Future extensions',
   'Capital / Metro / Valley 为运营线路；扩建线路采用虚线，标注未运营及各段建设状态。点击车站查看名称与线路，放大可显示更多车站名。规划线路及站位可能调整，示意位置会特别注明。地理图层覆盖范围可超出社区统计范围；不会为市外区域推算人口资料。': 'Capital, Metro and Valley are operating LRT lines. Dashed extensions are not in service; their construction or planning status is identified. Select a station for its name and route, and zoom in for more station labels. Planned routes and stations may change; schematic locations are identified. Geographic context can extend beyond the census area, without estimating population for areas outside Edmonton.',
-  '学校分配需按具体地址核验。收入或人口构成不能等同于学校质量、治安或个人特征。地图仅覆盖 Edmonton 市内社区，不含 St. Albert、Sherwood Park 等市外地区。': 'Confirm school assignments using the exact address. Income and population composition do not measure school quality, safety or individual characteristics. Census statistics cover Edmonton neighbourhoods, excluding St. Albert, Sherwood Park and other municipalities.',
   '详情与热度图的占比由公布人数除以同表的私人住户人口计算，保留一位小数；与市府表中已取整的百分比可能略有不同。官方人数通常按 5 人取整，各类别人数之和可能略偏离总人口。分类合计少于人口总数时，差额在圆环中单独留白；超过人口总数时，圆环按分类合计缩放。详情数值仍使用表中人口基数。': 'Detail and heat-map percentages divide published counts by private-household population in the same long-form table, shown to one decimal place. They may differ slightly from rounded percentages in the City tables. Counts are usually randomly rounded to multiples of five, so categories can sum above or below the table population. A shortfall is shown as a separate gap in the ring; an excess is scaled to fit the ring. Detail percentages retain the original table denominator.',
   '“社区构成”的“地图图层”可分别切换道路与铁路、社区名称、LRT 和地理地标；“分布对比”保留简洁的人口热度图。社区名称在地图上使用大写，详情保留原名称。文字随缩放逐步显示并自动避让，放大后可查看更多社区和站点。机场使用紫色、公园使用绿色、原住民保留区使用浅棕色，这些地理底色不表示人口或收入。': 'In Composition, Map layers controls roads and railways, neighbourhood labels, LRT and geographic landmarks. Distribution retains a simple population heat map. Neighbourhood labels use capitals, with original names in the details. Labels appear progressively as you zoom and avoid overlap. Purple airports, green parks and tan reserve lands are geographic context, not population or income values.',
   'Edmonton Public Schools · 按地址查询公校': 'Edmonton Public Schools · Find a school by address',
   '人口构成与占比采用 25% 长表的私人住户人口；儿童比例与平均住户人数采用 100% 短表。两种人口基数可能不同，不能混用。': 'Population composition and shares use private-household population from the 25% long form. Child shares and average household size come from the 100% short form. The population bases can differ and must not be interchanged.',
   '9 万': '$90k',
-  '住户收入中位数约为全市的': 'Median household income is approximately',
-  '选区仍需比较住房预算、具体地址对应的公校和通勤': 'Compare housing costs, public-school assignments for the exact address and commuting options',
-  '收入不等于学校质量或治安': 'Income does not measure school quality or safety',
-  '没有可用的同口径收入，不参与收入排名': 'No comparable income value is available, so this area is excluded from the income ranking',
-  '暂无数据不代表低收入': 'Missing data does not mean low income',
-  '0–14 岁儿童比例高于全市 18.2%，可进一步查看同龄活动和入学安排': 'The share of children aged 0–14 is above the citywide 18.2%; explore age-appropriate activities and school arrangements',
-  '平均住户人数较少，比较家庭收入时也要考虑住户规模差异': 'Average household size is smaller; account for household size when comparing household income',
-  '华人人口占比的统计分母较小，少量人数变化就会明显改变比例': 'The Chinese-population share has a small statistical denominator; small changes in counts can substantially change the percentage',
   '私人住户人口较少，百分比和收入中位数易受少数住户影响': 'The private-household population is small, so percentages and median income can be sensitive to a few households',
   '家庭收入因保密规则被抑制，未填作 0': 'Household income is suppressed for confidentiality and has not been replaced with zero',
   '华裔统计因保密规则被抑制，未填作 0': 'Chinese-population statistics are suppressed for confidentiality and have not been replaced with zero',
@@ -54,8 +45,6 @@ const phrases = {
 export function translateEdmontonReference(value = '') {
   return String(value).split(/[。；]/).map(part => part.trim()).filter(Boolean).map(part => {
     if (phrases[part]) return phrases[part];
-    const ratio = part.match(/^住户收入中位数约为全市的 ([\d.]+) 倍$/);
-    if (ratio) return `Median household income is approximately ${ratio[1]} times the citywide median`;
     const nonresponse = part.match(/^长表总未答复率为 ([\d.]+)%$/);
     if (nonresponse) return `The long-form total non-response rate is ${nonresponse[1]}%`;
     return part;
@@ -76,13 +65,12 @@ const metadataEnglish = {
   license: 'Statistical data adapted from Statistics Canada’s 2021 Census through the City of Edmonton; this product is not endorsed by Statistics Canada. Geographic data is used under the City of Edmonton Open Government Licence, Open Government Licence – Alberta, and Open Government Licence – Canada, as applicable. Leaflet uses the BSD 2-Clause licence.',
   populationGroupsDefinition: 'Population views use the 13 mutually classified visible-minority (racialized-population) categories from the City’s 2021 Census custom tabulation. The five largest visible-minority groups citywide are selected by default. “Not a visible minority” includes Indigenous people and must not be interpreted as White or European.',
   geographyDefinition: 'Geographic context uses official parks, railway and Indigenous reserve data. Edmonton International Airport (YEG) is shown at its official point location outside the city and does not expand the neighbourhood census coverage. Parks indicate designated park land, not all vegetation cover.',
-  referenceMethod: 'Reference notes use published income relative to the city median, child shares, household size and small statistical denominators. They do not infer education, safety or individual characteristics from ethnicity. School assignments and commuting require an exact address.',
 };
 
 export function registerEdmontonContent({ metadata, features = [], operatingTransit, greenTransit } = {}) {
   const translations = { ...phrases };
   for (const [key, english] of Object.entries(metadataEnglish)) if (metadata?.[key]) translations[metadata[key]] = english;
-  for (const feature of features) for (const key of ['note', 'caveat']) {
+  for (const feature of features) for (const key of ['caveat']) {
     const value = feature.properties?.[key];
     if (value) translations[value] = translateEdmontonReference(value);
   }

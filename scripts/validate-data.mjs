@@ -1,7 +1,12 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
 
-const communities = JSON.parse(fs.readFileSync(new URL('../public/data/communities.geojson', import.meta.url)));
+const communityBytes = fs.readFileSync(new URL('../public/data/communities.geojson', import.meta.url));
+const publicAudit = JSON.parse(fs.readFileSync(new URL('../data/audit/public-data-redaction.json', import.meta.url)));
+assert.equal(communityBytes.length, publicAudit.outputBytes, 'Published community data size differs from the audited snapshot');
+assert.equal(createHash('sha256').update(communityBytes).digest('hex'), publicAudit.outputSha256, 'Published community data differs from the audited snapshot');
+const communities = JSON.parse(communityBytes);
 const basemap = JSON.parse(fs.readFileSync(new URL('../public/data/basemap.geojson', import.meta.url)));
 const metadata = JSON.parse(fs.readFileSync(new URL('../public/data/metadata.json', import.meta.url)));
 assert.equal(communities.type, 'FeatureCollection');
@@ -16,7 +21,8 @@ let incomeCount = 0;
 let chineseCount = 0;
 for (const feature of communities.features) {
   const p = feature.properties;
-  assert.ok(p.name && p.code !== undefined && p.note, 'Every neighbourhood needs an identity and reference note');
+  assert.ok(p.name && p.code !== undefined, 'Every neighbourhood needs an identity');
+  assert.ok(!Object.hasOwn(p, 'note'), 'Public neighbourhoods must not contain editorial selection advice');
   assert.ok(['Polygon', 'MultiPolygon'].includes(feature.geometry.type));
   assert.ok(Array.isArray(p.centroid) && p.centroid[0] > -115 && p.centroid[0] < -112 && p.centroid[1] > 52 && p.centroid[1] < 55);
   if (p.income !== null) {
